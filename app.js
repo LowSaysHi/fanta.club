@@ -9,7 +9,7 @@ function home(){
 function profile(){
   if(!user){openModal('login');return}
   nav(false);location.hash='me';
-  $('#view').innerHTML='<section class="me"><div class="big">🦆</div><h2>'+esc(user.nick)+'</h2><div class="mail">✉ '+esc(user.email)+' ✎</div><strong>User</strong><div style="margin-top:24px"><button class="btn" data-go="soon">⬇ Download Loader</button></div><div class="row"><button data-go="soon">🔒 Change Password</button><button data-go="soon">🛡 Enable 2FA</button></div><button class="ghost" data-go="soon">✎ Tell us about you</button><div class="banner"><span>Featured offer</span><span>Starting soon</span><small>Banner placeholder</small></div></section>';
+  $('#view').innerHTML='<section class="me"><img class="big" src="assets/img/avatar.jpg" alt="Profile picture"><h2>'+esc(user.nick)+'</h2><div class="mail">✉ '+esc(user.email)+' ✎</div><strong>User</strong><div style="margin-top:24px"><button class="btn" data-go="soon">⬇ Download Loader</button></div><div class="row"><button data-go="soon">🔒 Change Password</button><button data-go="soon">🛡 Enable 2FA</button></div><button class="ghost" data-go="soon">✎ Tell us about you</button><div class="banner"><span>Featured offer</span><span>Starting soon</span><small>Banner placeholder</small></div></section>';
 }
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 function openModal(m){mode=m;var reg=m==='register';

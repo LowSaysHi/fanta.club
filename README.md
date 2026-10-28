@@ -2,6 +2,9 @@
 
 Static site, no build step.
 
+## Deploy (GitHub Pages)
+Upload everything in this folder to a repo (index.html at the top level), then Settings → Pages → Deploy from a branch → main / root.
+
 ## Run
 Open `index.html`, or serve the folder: `npx serve .` / `python3 -m http.server`.
 

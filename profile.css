@@ -1,6 +1,6 @@
 /* profile */
 .me{width:100%;max-width:1100px;margin:0 auto;padding:70px 24px;text-align:center}
-.big{width:128px;height:128px;border-radius:50%;border:3px solid var(--or);background:#0e7490;display:grid;place-items:center;font-size:64px;margin:0 auto 14px}
+.big{width:128px;height:128px;border-radius:50%;border:3px solid var(--or);object-fit:cover;display:block;margin:0 auto 14px}
 .me h2{margin:0;color:var(--or);font-size:32px}
 .me .mail{color:var(--mute);margin:10px 0}
 .row{display:flex;justify-content:center;gap:24px;margin:26px 0;color:var(--mute)}
